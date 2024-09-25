@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "ec"
+version = "0.1.0"
+description = ""
+authors = ["Gus1101 <augustosantosb60@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.3"
+pytest = "^8.3.3"
+requests = "^2.32.3"
+python-dotenv = "^1.0.1"
+boto3 = "^1.35.25"
+pyarrow = "^17.0.0"
+openpyxl = "^3.1.5"
+geopy = "^2.4.1"
+scikit-learn = "^1.5.2"
+taskipy = "^1.13.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+test = "poetry run python -m pytest"
